@@ -13,22 +13,22 @@
       rel="stylesheet"
     />
     <title>DOCTYPE</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    /> -->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
   <body>
-    <!--------------------Шапка портфолио------------------>
+    <!-- Шапка портфолио -->
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="logo header__logo link"
-          ><span class="logo header__logostyle">Web</span>Studio</a
+        <a href="./index.html" class="logo link"
+          >Web<span class="logo__style--dark">Studio</span></a
         >
         <nav class="nav">
           <ul class="nav__list list">
@@ -65,7 +65,7 @@
     </header>
 
     <main>
-      <!----------------------Портфолио------------------>
+      <!-- Портфолио  -->
       <section class="portfolio">
         <div class="container">
           <h1 class="portfolio__title visually-hidden">Портфолио</h1>
@@ -294,8 +294,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__contact">
-          <a href="./index.html" class="logo footer__logo link"
-            ><span class="logo footer__logostyle">Web</span>Studio</a
+          <a href="./index.html" class="logo link"
+            >Web<span class="logo__style--light">Studio</span></a
           >
           <address class="address">
             <ul class="address__list list">
@@ -303,18 +303,20 @@
                 <a
                   href="https://goo.gl/maps/gY4igKeAdsHqv6zv8"
                   target="_blank"
-                  class="address__link link"
+                  class="address__link--light link"
                   rel="noopener nofollow noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
               <li class="address__item">
-                <a href="mailto:info@example.com" class="address__link link"
+                <a
+                  href="mailto:info@example.com"
+                  class="address__link--dark link"
                   >info@example.com</a
                 >
               </li>
               <li class="address__item">
-                <a href="tel:+380991111111" class="address__link link"
+                <a href="tel:+380991111111" class="address__link--dark link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -324,28 +326,28 @@
         <div class="join">
           <p class="join__title">присоединяйтесь</p>
           <ul class="soc list">
-            <li class="soc__item">
-              <a href="" class="soc__link link"
+            <li class="soc__item soc__item--dark">
+              <a href="" class="soc__link soc__link--light link"
                 ><svg class="soc__icon" width="20" height="20">
                   <use
                     href="./images/symbol-defs.svg#icon-instagram"
                   ></use></svg
               ></a>
             </li>
-            <li class="soc__item">
-              <a href="" class="soc__link link"
+            <li class="soc__item soc__item--dark">
+              <a href="" class="soc__link soc__link--light link"
                 ><svg class="soc__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="soc__item">
-              <a href="" class="soc__link link"
+            <li class="soc__item soc__item--dark">
+              <a href="" class="soc__link soc__link--light link"
                 ><svg class="soc__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="soc__item">
-              <a href="" class="soc__link link">
+            <li class="soc__item soc__item--dark">
+              <a href="" class="soc__link soc__link--light link">
                 <svg class="soc__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
               ></a>
@@ -356,7 +358,7 @@
           <p class="subscribe__title">Подпишитесь на рассылку</p>
           <form name="subscribe__form">
             <div class="subscribe__wrap">
-              <label for="subscribe__label"></label>
+              <label for="subscribe-label"></label>
               <input
                 type="email"
                 class="subscribe__input"
