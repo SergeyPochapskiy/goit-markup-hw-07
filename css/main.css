@@ -347,7 +347,7 @@ body {
   color: var(--primary-text-color);
 }
 
-btn-close {
+.btn-close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -362,11 +362,11 @@ btn-close {
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-btn-close:hover {
+.btn-close:hover {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-btn-close:focus {
+.btn-close:focus {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -413,7 +413,7 @@ btn-close:focus {
   pointer-events: none;
 }
 
-modal {
+.modal {
   width: 528px;
   min-height: 581px;
   border-radius: 4px;
@@ -426,7 +426,7 @@ modal {
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) translateX(-150px);
   opacity: 0;
 }
